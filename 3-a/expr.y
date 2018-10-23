@@ -6,6 +6,7 @@
 %left '*' '/'
 %%
 stmt:expr
+    | expr '=' expr
     ;
 expr: expr '+' expr
     | expr '-' expr
@@ -20,13 +21,13 @@ void main()
 {
 printf("enter expr : \n");
 yyparse();
-printf("valid exp");
+printf("valid exp\n");
 exit(0);
 
 }
 void yyerror()
 {
-  printf("invalid exp");
+  printf("invalid exp\n");
 exit(0);
 }
 

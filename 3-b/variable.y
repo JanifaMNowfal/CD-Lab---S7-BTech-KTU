@@ -6,6 +6,7 @@
 stmt:A
      ;
 A: LETTER B
+ | LETTER
  ;
 B: LETTER B
  | DIGIT B
@@ -16,12 +17,12 @@ B: LETTER B
 void main(){
 printf("enter string \n");
 yyparse();
-printf("valid");
+printf("valid\n");
 exit(0);
 }
 void yyerror()
 {
-printf("invalid");
+printf("invalid\n");
 exit(0);
 }
 
