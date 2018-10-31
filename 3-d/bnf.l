@@ -1,3 +1,5 @@
+
+//bnf 
 %{
 #include"y.tab.h"
 #include<stdio.h>
