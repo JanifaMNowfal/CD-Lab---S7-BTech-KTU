@@ -24,7 +24,7 @@ return NUM;}
 \>= |
 \<= |
 == {strcpy(yylval.var,yytext);
-return RELOPRT;}
+return RELOP;}
 [ \t] ;
 \n LineNo++;
 . return yytext[0];
