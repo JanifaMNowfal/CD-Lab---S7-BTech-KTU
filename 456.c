@@ -1,6 +1,6 @@
 // C Program to illustrate how to convert e-nfa to DFA 
 
-#include <stdio.h> 
+#include <stdio.h> //stdio.h preprocessor library
 #include <stdlib.h> 
 #include <string.h> 
 #define MAX_LEN 100 
