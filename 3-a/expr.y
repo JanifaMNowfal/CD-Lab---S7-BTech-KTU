@@ -1,3 +1,4 @@
+//calculator using yacc
 %{
 #include<stdio.h>
 %}
